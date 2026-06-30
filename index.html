@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Friendship Day | Hrishi ❤️ Yash</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet"
+/>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- LOADING SCREEN -->
+<!-- ========================= -->
+
+<div id="loader">
+
+<div class="loader-circle"></div>
+
+<h2>Loading Friendship...</h2>
+
+</div>
+
+<!-- Floating Effects -->
+
+<div id="stars"></div>
+<div id="hearts"></div>
+<div id="balloons"></div>
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<audio id="bgMusic" loop>
+
+<source src="music.mp3" type="audio/mp3">
+
+</audio>
+
+<button id="musicBtn">
+
+<i class="fa-solid fa-music"></i>
+
+</button>
+
+<!-- ========================= -->
+<!-- LIVE CLOCK -->
+<!-- ========================= -->
+
+<div id="clock"></div>
+
+<!-- ========================= -->
+<!-- PASSWORD PAGE -->
+<!-- ========================= -->
+
+<section id="lockScreen">
+
+<div class="glass">
+
+<h1>🔐 Friendship Lock</h1>
+
+<p>
+
+"True friendship isn't about being inseparable,
+
+it's about staying connected no matter the distance."
+
+</p>
+
+<input
+
+type="password"
+
+id="password"
+
+placeholder="Enter Password"
+
+/>
+
+<button id="unlockBtn">
+
+Unlock 💙
+
+</button>
+
+<p class="hint">
+
+Password : <b>Yash💙</b>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MAIN WEBSITE -->
+<!-- ========================= -->
+
+<div id="website" style="display:none;">
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero">
+
+<h1>
+
+Hrishi 🤝 Yash
+
+</h1>
+
+<h2 id="typing"></h2>
+
+</section>
+
+<!-- ========================= -->
+<!-- TIMELINE -->
+<!-- ========================= -->
+
+<section class="timeline">
+
+<h2>
+
+Our Friendship Journey
+
+</h2>
+
+<div class="timeline-container">
+
+<div class="card">
+
+<h3>👋 First Meeting</h3>
+
+<p>Where everything started...</p>
+
+</div>
+
+<div class="card">
+
+<h3>💬 First Conversation</h3>
+
+<p>The beginning of endless talks.</p>
+
+</div>
+
+<div class="card">
+
+<h3>😂 Funny Moments</h3>
+
+<p>Countless laughs together.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏕 Adventures Together</h3>
+
+<p>Every trip became unforgettable.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💪 Support in Difficult Times</h3>
+
+<p>You were always there.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Forever Friends</h3>
+
+<p>Still together...</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GALLERY -->
+<!-- ========================= -->
+
+<section class="gallery">
+
+<h2>
+
+Photo Gallery
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="images/1.jpg">
+
+<img src="images/2.jpg">
+
+<img src="images/3.jpg">
+
+<img src="images/4.jpg">
+
+<img src="images/5.jpg">
+
+<img src="images/6.jpg">
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MEMORIES -->
+<!-- ========================= -->
+
+<section class="memories">
+
+<h2>
+
+Best Memories
+
+</h2>
+
+<div class="memory-container">
+
+<div class="memory-card">
+
+🎉 Click To Reveal
+
+<p class="hidden">
+
+Our funniest day together 😂
+
+</p>
+
+</div>
+
+<div class="memory-card">
+
+❤️ Click To Reveal
+
+<p class="hidden">
+
+That unforgettable trip...
+
+</p>
+
+</div>
+
+<div class="memory-card">
+
+🌟 Click To Reveal
+
+<p class="hidden">
+
+Late night conversations...
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- 100 REASONS -->
+<!-- ========================= -->
+
+<section class="reasons">
+
+<h2>
+
+100 Reasons Why You're My Best Friend
+
+</h2>
+
+<div class="glass">
+
+<h3 id="reasonText">
+
+Reason appears here...
+
+</h3>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<div class="buttons">
+
+<button id="prev">
+
+Previous
+
+</button>
+
+<button id="random">
+
+Random
+
+</button>
+
+<button id="next">
+
+Next
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FRIENDSHIP LETTER -->
+<!-- ========================= -->
+
+<section class="letter">
+
+<h2>
+
+Friendship Letter
+
+</h2>
+
+<div class="glass">
+
+<p id="letter">
+
+Dear Yash,
+
+Thank you for being my biggest supporter,
+
+my best friend,
+
+my brother,
+
+and my family.
+
+Happy Friendship Day ❤️
+
+</p>
+
+<button id="downloadLetter">
+
+Download Letter
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROMISES -->
+<!-- ========================= -->
+
+<section>
+
+<h2>
+
+Friendship Promises
+
+</h2>
+
+<div class="promise-grid">
+
+<div class="promise">
+
+🔒 Click to Unlock
+
+</div>
+
+<div class="promise">
+
+🔒 Click to Unlock
+
+</div>
+
+<div class="promise">
+
+🔒 Click to Unlock
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GIFTS -->
+<!-- ========================= -->
+
+<section>
+
+<h2>
+
+Virtual Gifts
+
+</h2>
+
+<div class="gift-grid">
+
+<div>🎧</div>
+
+<div>🍕</div>
+
+<div>🍫</div>
+
+<div>🎮</div>
+
+<div>🏆</div>
+
+<div>⌚</div>
+
+<div>📖</div>
+
+<div>🤝</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FUN ZONE -->
+<!-- ========================= -->
+
+<section>
+
+<h2>
+
+Fun Zone
+
+</h2>
+
+<div class="games">
+
+<button>
+
+Friendship Quiz
+
+</button>
+
+<button>
+
+Spin Wheel
+
+</button>
+
+<button>
+
+Rock Paper Scissors
+
+</button>
+
+<button>
+
+Tic Tac Toe
+
+</button>
+
+<button>
+
+Guess Number
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CELEBRATION -->
+<!-- ========================= -->
+
+<section class="celebrate">
+
+<h2>
+
+Happy Friendship Day 🎉
+
+</h2>
+
+<button id="celebrateBtn">
+
+Celebrate 🎆
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOREVER -->
+<!-- ========================= -->
+
+<section class="forever">
+
+<h1>
+
+No matter where life takes us...
+
+<br><br>
+
+Hrishi ❤️ Yash
+
+will always remain
+
+Best Friends.
+
+</h1>
+
+<button>
+
+Replay Story
+
+</button>
+
+<button>
+
+Celebrate Again
+
+</button>
+
+<button>
+
+Share Friendship
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+Made with Endless Friendship ❤️
+
+Dedicated to my Best Friend Yash
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
